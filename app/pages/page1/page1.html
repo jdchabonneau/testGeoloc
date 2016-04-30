@@ -1,0 +1,24 @@
+<ion-navbar *navbar>
+  <ion-title>Record Path</ion-title>
+</ion-navbar>
+
+<ion-content padding class="page1">
+  <h2>Welcome to Ionic Geoloc Tester! v0.1.3</h2>
+  Path Name: <input [(ngModel)]="pathName" placeholder="path name" /> 
+  <button danger (click)="onRemove()">Remove</button>
+  <br>
+  <button (click) = "onClick()"> GetLocation </button>
+  Message: {{msg}}
+  <br>
+  <ul>
+    <li *ngFor="#locationString of locationStrings">
+      {{locationString}}
+</li>
+  </ul>
+  
+    <button secondary (click) = "onStart()"> Start </button> 
+    {{counter}} 
+  <button dark (click) = "onStop()"> Stop </button> 
+  {{distance}}
+
+</ion-content>

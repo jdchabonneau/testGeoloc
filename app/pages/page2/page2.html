@@ -1,0 +1,13 @@
+<ion-navbar *navbar>
+  <ion-title>
+    Show Path
+  </ion-title>
+</ion-navbar>
+
+<ion-content class="page2">
+  <input [(ngModel)]="pathName" placeholder="path name" />
+  <button (click)="onDraw()"> Draw </button> 
+  <button secondary (click)="onRecord()"> Record </button>
+  <br> 
+  <canvas id="myCanvas" width="250" height="250" style="border:1px solid #000000;"></canvas>
+</ion-content>
